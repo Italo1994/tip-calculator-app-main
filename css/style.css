@@ -15,6 +15,7 @@ body {
     width: 100%;
     height: 100vh;
     font-family: 'Space Mono', monospace;
+    overflow-x: hidden;
 }
 
 .container {
@@ -91,9 +92,14 @@ body {
     text-decoration: none;
 }
 
+.item-percentual:hover {
+    background-color: #0a6063;
+}
+
 .item-percentual:nth-child(6) {
     background-color: hsl(185, 41%, 84%);
     color: var(--cor_principal);
+    padding-left: 5px;
 }
 
 #lado-resultado {
@@ -105,7 +111,7 @@ body {
 }
 
 .input-dados {
-    background-color: hsl(189, 41%, 97%);
+    background-color: hsl(180, 16%, 92%);
     height: 40px;
     border: none;
     border-radius: 5px;
