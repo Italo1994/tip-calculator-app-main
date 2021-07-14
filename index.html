@@ -7,6 +7,7 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -79,8 +80,13 @@
             </div>
 
             <div class="area-entrada">
-              <label class="rotulo">Number of People</label>
+              
+              <div id="area-people">
+                <label class="rotulo">Number of People</label>
+                <span class="texto-invisivel">Can't be zero</span>
+              </div>
               <input type="text" class="input-dados"/>
+
             </div>
 
           </form>
