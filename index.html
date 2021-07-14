@@ -34,12 +34,12 @@
           <form id="formulario-conta">
 
             <div class="area-entrada">
-              <label>Bill</label>
-              <input type="text"/ class="input-dados"/>
+              <label class="rotulo">Bill</label>
+              <input type="text" class="input-dados"/>
             </div>
 
             <div class="area-entrada">
-              <span class="">Select Tip %</span>
+              <span class="rotulo">Select Tip %</span>
 
               <div id="valores-percentuais">
                 
@@ -79,7 +79,7 @@
             </div>
 
             <div class="area-entrada">
-              <label>Number of People</label>
+              <label class="rotulo">Number of People</label>
               <input type="text" class="input-dados"/>
             </div>
 
@@ -87,8 +87,33 @@
         </div>
 
         <div id="lado-resultado">
-          LADO DIREITO
+          <div class="caixa-visor">
+            <div>
+              <p class="rotulo-montante">Tip Amount</p>
+              <span class="tag-person">/ person</span>
+            </div>
+
+            <div>
+              <p id="amount-person" class="cash">$0.00</p>
+            </div>
+          </div>
+
+          <div class="caixa-visor">
+            <div>
+              <p class="rotulo-montante">Total</p>
+              <span class="tag-person">/ person</span>
+            </div>
+
+            <div>
+              <p id="total-person" class="cash">$0.00</p>
+            </div>
+          </div>
+
+          <a id="botao-reset" href="#">
+            RESET
+          </a>
         </div>
+
       </div>
 
     </div>
