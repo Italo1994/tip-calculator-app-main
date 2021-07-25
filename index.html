@@ -9,6 +9,11 @@
 <<<<<<< HEAD
 =======
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsive.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
   
 >>>>>>> b83abb1a44cff25ade53d5f1e25f8ad663db6694
   <title>Frontend Mentor | Tip calculator app</title>
@@ -44,24 +49,107 @@
 =======
   <div class="container">
     <div class="container-conteudo">
+      
       <div class="area-titulo">
-        <h1>SPLITER</h1>
+        <h1 id="titulo-split">SPLITER</h1>
       </div>
+      
       <div class="area-calculadora">
-        <div class="lado-esquerdo">
-          LADO ESQUERDO
+        <div id="lado-calculo">
+          <form id="formulario-conta">
+
+            <div class="area-entrada">
+              <label class="rotulo">Bill</label>
+              <input type="text" class="input-dados"/>
+            </div>
+
+            <div class="area-entrada">
+              <span class="rotulo">Select Tip %</span>
+
+              <div id="valores-percentuais">
+                
+                <a href="#" class="item-percentual">
+                  <div>
+                    5%
+                  </div>
+                </a>
+                <a href="#" class="item-percentual">
+                  <div>
+                    10%
+                  </div>
+                </a>
+                <a href="#" class="item-percentual">
+                  <div>
+                    15%
+                  </div>
+                </a>
+                <a href="#" class="item-percentual">
+                  <div>
+                    25%
+                  </div>
+                </a>
+                <a href="#" class="item-percentual">
+                  <div>
+                    50%
+                  </div>
+                </a>
+                <a href="#" class="item-percentual">
+                  <div>
+                    Custom
+                  </div>
+                </a>
+                
+              </div>
+
+            </div>
+
+            <div class="area-entrada">
+              
+              <div id="area-people">
+                <label class="rotulo">Number of People</label>
+                <span class="texto-invisivel">Can't be zero</span>
+              </div>
+              <input type="text" class="input-dados"/>
+
+            </div>
+
+          </form>
         </div>
-        <div class="lado-direito">
-          LADO DIREITO
+
+        <div id="lado-resultado">
+          <div class="caixa-visor">
+            <div>
+              <p class="rotulo-montante">Tip Amount</p>
+              <span class="tag-person">/ person</span>
+            </div>
+
+            <div>
+              <p id="amount-person" class="cash">$0.00</p>
+            </div>
+          </div>
+
+          <div class="caixa-visor">
+            <div>
+              <p class="rotulo-montante">Total</p>
+              <span class="tag-person">/ person</span>
+            </div>
+
+            <div>
+              <p id="total-person" class="cash">$0.00</p>
+            </div>
+          </div>
+
+          <a id="botao-reset" href="#">
+            RESET
+          </a>
         </div>
+
       </div>
+
     </div>
   </div>
 >>>>>>> b83abb1a44cff25ade53d5f1e25f8ad663db6694
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
 </body>
 </html>
